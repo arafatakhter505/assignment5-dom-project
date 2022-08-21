@@ -1,0 +1,36 @@
+/* import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:wght@400;500;600;700&display=swap");
+
+/* global style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* heade style */
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+header h2 {
+  font-family: "Berkshire Swash", cursive;
+  color: #ff5e19;
+  font-size: 65px;
+  margin-bottom: 30px;
+}
+header p {
+  color: white;
+}
+.header-left img {
+  margin-bottom: -30px;
+}
+.football-img {
+  margin-right: -60px;
+}
