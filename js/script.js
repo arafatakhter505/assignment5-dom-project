@@ -6,13 +6,19 @@ const bappeBtn = document.getElementById("bappe-btn");
 const vitorBtn = document.getElementById("vitor-btn");
 const renatorBtn = document.getElementById("renato-btn");
 const sergioBtn = document.getElementById("sergio-btn");
+let listItemNum = 1;
 
 function addPlayerName(btn, name) {
-  const newList = document.createElement("li");
-  newList.innerText = name;
-  playersList.appendChild(newList);
-  btn.disabled = true;
-  btn.classList.add("disabled-btn");
+  if (listItemNum <= 5) {
+    const newList = document.createElement("li");
+    newList.innerText = listItemNum + ". " + name;
+    playersList.appendChild(newList);
+    btn.disabled = true;
+    btn.classList.add("disabled-btn");
+    listItemNum++;
+  } else {
+    alert("Cannot add more than 5 players");
+  }
 }
 
 messiBtn.addEventListener("click", function () {
