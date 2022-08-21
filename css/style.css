@@ -34,3 +34,39 @@ header p {
 .football-img {
   margin-right: -60px;
 }
+
+/* main style */
+main {
+  display: flex;
+  background-color: #151515;
+  padding: 50px 100px;
+}
+.players {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.player {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding-bottom: 20px;
+}
+.player img {
+  width: 100%;
+}
+.player h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.player p {
+  margin: 10px 0;
+}
+button {
+  background-color: #015196;
+  color: white;
+  padding: 15px 20px;
+  width: 70%;
+  cursor: pointer;
+}
