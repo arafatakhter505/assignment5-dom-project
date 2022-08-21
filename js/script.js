@@ -6,6 +6,13 @@ const bappeBtn = document.getElementById("bappe-btn");
 const vitorBtn = document.getElementById("vitor-btn");
 const renatorBtn = document.getElementById("renato-btn");
 const sergioBtn = document.getElementById("sergio-btn");
+const perPlayerField = document.getElementById("per-player-field");
+const calculateBtn = document.getElementById("calculate-btn");
+const playerExpenses = document.getElementById("player-expenses");
+const managerField = document.getElementById("manager-field");
+const coachField = document.getElementById("coach-field");
+const totalCalculateBtn = document.getElementById("total-calculate-btn");
+const totalBudget = document.getElementById("total-budget");
 let listItemNum = 1;
 
 function addPlayerName(btn, name) {
@@ -38,4 +45,17 @@ renatorBtn.addEventListener("click", function () {
 });
 sergioBtn.addEventListener("click", function () {
   addPlayerName(sergioBtn, "Sergio Ramos");
+});
+
+calculateBtn.addEventListener("click", function () {
+  listItemNum--;
+  const perPlayerFieldNum = parseFloat(perPlayerField.value);
+  playerExpenses.innerText = perPlayerFieldNum * listItemNum;
+  listItemNum++;
+});
+totalCalculateBtn.addEventListener("click", function () {
+  const playerExpensesNum = parseFloat(playerExpenses.innerText);
+  const managerFieldNum = parseFloat(managerField.value);
+  const coachFieldNum = parseFloat(coachField.value);
+  totalBudget.innerText = playerExpensesNum + managerFieldNum + coachFieldNum;
 });

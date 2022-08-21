@@ -78,25 +78,27 @@
           <h3>Budget</h3>
           <div class="flex-div">
             <label>Per Player</label>
-            <input type="text" />
+            <input id="per-player-field" type="text" />
           </div>
-          <button>Calculate</button>
+          <button id="calculate-btn">Calculate</button>
           <div class="flex-div">
             <label>Player Expenses</label>
-            <label>$<span>5000</span></label>
+            <label>$<span id="player-expenses">0</span></label>
           </div>
           <div class="flex-div">
             <label>Manager</label>
-            <input type="text" />
+            <input id="manager-field" type="text" />
           </div>
           <div class="flex-div">
             <label>Coach</label>
-            <input type="text" />
+            <input id="coach-field" type="text" />
           </div>
-          <button>Calculate Total</button>
+          <button id="total-calculate-btn">Calculate Total</button>
           <div class="flex-div">
-            <label>Total </label>
-            <label class="orange-color">$<span>11000</span></label>
+            <label>Total</label>
+            <label class="orange-color"
+              >$<span id="total-budget">0</span></label
+            >
           </div>
         </div>
       </div>
