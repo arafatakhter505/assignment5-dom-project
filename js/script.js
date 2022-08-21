@@ -1,4 +1,3 @@
-const buttons = document.querySelectorAll(".buttons");
 const playersList = document.getElementById("players-list");
 const messiBtn = document.getElementById("messi-btn");
 const neymarBtn = document.getElementById("neymar-btn");
