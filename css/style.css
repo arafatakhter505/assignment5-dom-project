@@ -120,3 +120,12 @@ button {
 .orange-color {
   color: #ff5e19;
 }
+
+/* footer style */
+footer {
+  text-align: center;
+  color: white;
+  background-color: #151515;
+  padding: 20px 0;
+  border-top: 1px solid white;
+}
