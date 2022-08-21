@@ -72,6 +72,9 @@ button {
   width: 70%;
   cursor: pointer;
 }
+.disabled-btn {
+  background-color: #a2a9af;
+}
 .side-bar {
   width: 25%;
   color: white;
