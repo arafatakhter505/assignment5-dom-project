@@ -48,14 +48,26 @@ sergioBtn.addEventListener("click", function () {
 });
 
 calculateBtn.addEventListener("click", function () {
-  listItemNum--;
   const perPlayerFieldNum = parseFloat(perPlayerField.value);
-  playerExpenses.innerText = perPlayerFieldNum * listItemNum;
-  listItemNum++;
+  if (isNaN(perPlayerFieldNum)) {
+    alert("Enter valid input");
+  } else if (perPlayerFieldNum < 0) {
+    alert("Only Positive Number");
+  } else {
+    listItemNum--;
+    playerExpenses.innerText = perPlayerFieldNum * listItemNum;
+    listItemNum++;
+  }
 });
 totalCalculateBtn.addEventListener("click", function () {
   const playerExpensesNum = parseFloat(playerExpenses.innerText);
   const managerFieldNum = parseFloat(managerField.value);
   const coachFieldNum = parseFloat(coachField.value);
-  totalBudget.innerText = playerExpensesNum + managerFieldNum + coachFieldNum;
+  if (isNaN(managerFieldNum) || isNaN(coachFieldNum)) {
+    alert("Enter valid input");
+  } else if (managerFieldNum < 0 || coachFieldNum < 0) {
+    alert("Only Positive Number");
+  } else {
+    totalBudget.innerText = playerExpensesNum + managerFieldNum + coachFieldNum;
+  }
 });
